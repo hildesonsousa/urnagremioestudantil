@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ELEIÇÕES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/voto.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/voto.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css" />
+    <script type="text/javascript" src="dist/js/eleicao.js"></script>
+</head>
+
+<body class="fundo" onselectstart="return false" ondragstart="return false" style="background-color:#1a87c5;color:#fff">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <h1 class="alert alert-light">ELEIÇÕES 2018 - PERIODO MANHÃ - CSMK</h1>
+                <h2>ESCOLHA SEU REPRESENTANTE</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <form method="get" name="" id="eleicaoform" action="apura.php">
+                    <audio id="audio" src="sons/beep.wav" autostart="false" ></audio>
+                    <input type="text" autofocus required name="n1" autocomplete="off" class="tamnum" maxlength="1"  id="1" onkeypress='return SomenteNumero(event)' onkeyup='conta(this)' onkeydown='playSound();'>
+                    <input type="text" required name="n2" autocomplete="off" class="tamnum" maxlength="1"  id="2" onkeypress='return SomenteNumero(event)' onkeyup='conta(this)' onkeydown='playSound();'>
+                        <div id="info09">
+                            <h3>KAROLINE</h3>
+                            <h4>VICE ANDREY RAPHAEL</h4>
+                            <h4>GRUPO ZIZA</h4>
+                        </div>
+                        <div id="info05">
+                            <h3>LORRAN INÁCIO</h3>
+                            <h4>VICE LUCAS</h4>
+                            <h4>GRUPO DA MARIA</h4>
+                        </div>       
+            </div>
+            <div class="col-md">
+                <div id="can09">
+                    <img src="img/candidato1.jpg" title="Candidato XY" alt="Foto do candidato XY" class="candidato img-thumbnail shadow p-3 mb-2 bg-white rounded">
+                    <img src="img/vice_candidato1.jpg" title="Candidato XY" alt="Foto do candidato XY" class="vice img-thumbnail shadow p-3 mb- bg-white rounded">   
+                </div>
+                <div id="can05">
+                    <img src="img/candidato2.jpg" title="Candidato XY" alt="Foto do candidato XY" class="candidato img-thumbnail shadow p-3 mb-2 bg-white rounded">
+                    <img src="img/vice_candidato2.jpg" title="Candidato XY" alt="Foto do candidato XY" class="vice img-thumbnail shadow p-3 mb- bg-white rounded">   
+                </div>
+                <div id="cannulo">
+                        <h1 class="votonulo">VOTO NULO!!!</h1>
+                        <h1 style="color: #ff0;">Este número não é de nenhum candidato válido!</h1>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <br><br>
+                <input type="button" value="Branco" class="btn btn-light">
+                <input type="reset" value="Corrigir" class="btn btn-warning" onclick='location.reload();'>
+                <input type="submit" value="Confirmar" class="btn btn-success tambt" id="3" style="height:60px; width:auto;" onfocus='exibicandidato();'>
+                <input type="hidden" id="caracteres">  
+            </form>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script type="text/script" src="dist/js/bootstrap.js"></script>
+    <script type="text/script" src="dist/js/jquery-3.3.1.min.js"></script>
+
+</body>
+</html>

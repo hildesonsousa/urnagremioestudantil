@@ -1,0 +1,51 @@
+.candidato{
+    width: 55%;
+    height: auto;
+}
+
+.vice{
+    width: 40%;
+    height: auto;
+}
+
+.fundo{
+    margin: auto 0;
+    background-color: #999;
+}
+
+.tamnum{
+    height: 200px;
+    width: 145px;
+    font: 180px arial;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color:#ddd;
+    background-clip: padding-box;
+    border: 5px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.tamnum:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  .div-centro, .div-centor h2{
+      text-align: center;
+      vertical-align: center;
+      margin: auto;
+      color: #fff;
+  }
+
+  #can09, #can05, #info09, #info05, #cannulo{
+      display: none;
+  }
+
+  .votonulo{
+      font-size: 72pt;
+  }
